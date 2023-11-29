@@ -14,6 +14,10 @@ a {
 
 /* Header */
 
+.font-nav {
+  font-size: 20px;
+}
+
 nav {
   text-decoration: none;
   border-radius: 8px;
@@ -68,6 +72,14 @@ nav {
   display: grid;
   gap: 2rem;
 }
+
+.grid-card-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
 .team-card {
   display: flex;
   justify-content: space-between;
@@ -240,6 +252,10 @@ img {
     row-gap: 3rem;
   }
 
+  .font-nav {
+    font-size: 16px;
+  }
+
   .nav-footer {
     padding-top: 0.5rem;
   }
@@ -250,6 +266,13 @@ img {
   }
 
   .grid-card {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-items: center;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .grid-card-2 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     justify-items: center;
     display: grid;
